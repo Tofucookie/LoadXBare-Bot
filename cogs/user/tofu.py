@@ -20,5 +20,6 @@ class Tofu(commands.Cog):
                         value=f'<@{ctx.message.author.id}> I would like to have a word with you.',
                         inline=False)
         embed.set_image(url=random.choice(images))
+        embed.set_footer("You know what you did...")
         await ctx.reply(embed=embed,
                         mention_author=False)
